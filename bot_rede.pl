@@ -1,16 +1,11 @@
-%Guilherme Evaristo de Oliveira
-%RMG: 26448645
-%Projeto integrador de competÍncias 4
-%ChatBot
-
-%!	Salvo no padr„o ANSI
+%!	Salvo no padr√£o ANSI
 
 :-include(base_dados1).
 :-include(base_dados2).
 
 main:-
 
-        write('Ol·, sou o bot de redes \nEscreva sua ·rea em d˙vida abaixo ou digite "lista 1", "lista 2" para mais informaÁıes\nQuando quiser finalizar o processo, digite "sair"'),nl,
+        write('Ol√°, sou o bot de redes \nEscreva sua √°rea em d√∫vida abaixo ou digite "lista 1", "lista 2" para mais informa√ß√µes\nQuando quiser finalizar o processo, digite "sair"'),nl,
         leitura.
 
 leitura:-
@@ -24,7 +19,7 @@ processa(X):-
         consulta(X,Y)
                 ->      format('~s~n', [Y]),
                         leitura
-                ;       format('~s~n', ['Desculpe, n„o entendi sua pergunta!']),
+                ;       format('~s~n', ['Desculpe, n√£o entendi sua pergunta!']),
                 leitura.
 
 :- initialization(main).
